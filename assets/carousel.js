@@ -132,3 +132,37 @@ window.addEventListener("scroll", () => {
 
   header.classList.toggle("scrolled", scrolled);
 });
+
+
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+    const form = e.target;
+
+    if (!form.checkValidity()) {
+        return; 
+    }
+
+    e.preventDefault(); 
+
+    const formData = new FormData(form);
+    const submitButton = form.querySelector('button[type="submit"]');
+    
+    submitButton.innerHTML = 'Sending...';
+    submitButton.disabled = true;
+
+    // Send data to Google Forms in the background
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+    })
+    .then(() => {
+        // Success state
+        submitButton.innerHTML = 'Information Submitted Successfully';
+        form.reset(); // Clears the form inputs upon success
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        submitButton.innerHTML = 'Error, please try again';
+        submitButton.disabled = false;
+    });
+});

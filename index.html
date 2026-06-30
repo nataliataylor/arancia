@@ -3,6 +3,7 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="Arancia Yards, Beyond Developments, City Of Arabia, Dubai, Wadi Al Safa 4, Dubailand">
       <link rel="preload" as="image" href="./assets/hero.webp">
       <link rel="stylesheet" href="./assets/styles-DSCFH82Z.css" data-precedence="default">
       <link rel="stylesheet" href="./assets/css2" data-precedence="default">
@@ -13,6 +14,7 @@
       <meta name="description" content="A nature-led residential community within The Yards, City of Arabia, Dubai. 1, 2 &amp; 3 bedroom Mediterranean-inspired residences.">
       <meta property="og:title" content="Arancia Yards — The Essence of Cultivated Living">
       <meta property="og:description" content="Mediterranean-inspired residences in a landscape-led community at City of Arabia, Dubai.">
+      <meta property="og:image" content="https://beyond.broker/assets/hero.webp" />
       <meta property="og:url" content="/">
       <link rel="preconnect" href="https://fonts.googleapis.com/">
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
@@ -818,16 +820,16 @@
                   <p class="mt-6 text-muted-foreground leading-relaxed">Our team will respond within one business day with full project information and a private consultation.</p>
                </div>
                <div class="lg:col-span-7" style="opacity: 1; transform: none;">
-                  <form class="space-y-6 bg-background border border-border p-8 lg:p-10">
+                  <form id="leadForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdxNfIpG-yXY3XwXq2v94Lv6ouKyDY1MdpH5j94Rzq9bI4p7A/formResponse" method="POST" class="space-y-6 bg-background border border-border p-8 lg:p-10">
                      <div class="group">
                         <label class="text-[10px] tracking-[0.28em] uppercase text-muted-foreground flex items-center gap-2">
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-3 w-3" aria-hidden="true">
                               <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                               <circle cx="12" cy="7" r="4"></circle>
                            </svg>
-                           Full Name
+                           *Full Name
                         </label>
-                        <input required="" type="text" class="mt-2 w-full bg-transparent border-b border-border focus:border-olive outline-none py-3 font-serif text-lg transition-colors" name="name">
+                        <input id="fullName" required="" type="text" class="mt-2 w-full bg-transparent border-b border-border focus:border-olive outline-none py-3 font-serif text-lg transition-colors" name="entry.2005620554">
                      </div>
                      <div class="group">
                         <label class="text-[10px] tracking-[0.28em] uppercase text-muted-foreground flex items-center gap-2">
@@ -835,18 +837,18 @@
                               <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
                               <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                            </svg>
-                           Email
+                           *Email
                         </label>
-                        <input required="" type="email" class="mt-2 w-full bg-transparent border-b border-border focus:border-olive outline-none py-3 font-serif text-lg transition-colors" name="email">
+                        <input id="email" required="" type="email" class="mt-2 w-full bg-transparent border-b border-border focus:border-olive outline-none py-3 font-serif text-lg transition-colors" name="entry.1045781291">
                      </div>
                      <div class="group">
                         <label class="text-[10px] tracking-[0.28em] uppercase text-muted-foreground flex items-center gap-2">
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-3 w-3" aria-hidden="true">
                               <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
                            </svg>
-                           Phone
+                           *Phone
                         </label>
-                        <input required="" type="tel" class="mt-2 w-full bg-transparent border-b border-border focus:border-olive outline-none py-3 font-serif text-lg transition-colors" name="phone">
+                        <input id="phone" required="" type="tel" pattern="[0-9]*" class="mt-2 w-full bg-transparent border-b border-border focus:border-olive outline-none py-3 font-serif text-lg transition-colors" name="entry.1166974658">
                      </div>
                      <button type="submit" class="group w-full inline-flex items-center justify-center gap-3 bg-foreground text-background px-9 py-5 text-[11px] tracking-[0.28em] uppercase hover:bg-accent transition-colors mt-4">
                         Request Information 
