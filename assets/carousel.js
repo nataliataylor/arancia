@@ -166,3 +166,11 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
         submitButton.disabled = false;
     });
 });
+
+const modal = document.getElementById('enquireModal');
+const openModal = () => modal.showModal();
+const closeModal = () => modal.close();
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) closeModal();
+});

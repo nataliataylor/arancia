@@ -26,12 +26,12 @@
          <header id="header" class="header">
             <div class="mx-auto flex max-w-[1400px] items-center justify-between px-6 lg:px-10 py-5">
                <a href="#" class="font-serif text-xl tracking-wide text-background">Arancia <span class="italic text-accent keep-accent">Yards</span></a>
-               <nav class="hidden md:flex items-center gap-8"><a href="#living" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Living</a><a href="#location" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Location</a><a href="#residences" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Residences</a><a href="#amenities" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Amenities</a><a href="#masterplan" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Masterplan</a><a href="#enquire" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Enquire</a></nav>
+               <nav class="hidden md:flex items-center gap-8"><a href="#living" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Living</a><a href="#location" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Location</a><a href="#residences" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Residences</a><a href="#amenities" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Amenities</a><a href="#masterplan" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Masterplan</a><a href="#" onclick="openModal(); return false;" class="text-[12px] tracking-[0.22em] uppercase transition-colors text-background/80 hover:text-background">Enquire</a></nav>
                <div class="flex items-center gap-3 ps-4 border-s border-background/20">
                   <a href="" class="text-[12px] font-bold tracking-[0.22em] uppercase text-background">EN</a>
                   <a href="ru/index.html" class="text-[12px] tracking-[0.22em] uppercase text-background/60 hover:text-background transition-colors">RU</a>
                </div>
-               <a href="#enquire" class="hidden md:inline-flex items-center gap-2 border px-5 py-2.5 text-[12px] tracking-[0.22em] uppercase transition-colors border-background/70 text-background hover:bg-background hover:text-foreground">
+               <a href="#" onclick="openModal(); return false;" class="hidden md:inline-flex items-center gap-2 border px-5 py-2.5 text-[12px] tracking-[0.22em] uppercase transition-colors border-background/70 text-background hover:bg-background hover:text-foreground">
                   Register 
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3.5 w-3.5" aria-hidden="true">
                      <path d="M7 7h10v10"></path>
@@ -59,14 +59,14 @@
                <p class="mt-5 max-w-xl text-sm leading-relaxed text-background/75 font-light" style="opacity: 1;">A nature-led residential community within The Yards, set among gardens, orchards and walkable plazas.</p>
                <div class="mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-[12px] tracking-[0.28em] uppercase text-background/70" style="opacity: 1; transform: none;"><span>1 · 2 · 3 Bedroom</span><span class="hidden sm:inline h-1 w-1 rounded-full bg-background/40"></span><span>Landscape-Led</span><span class="hidden sm:inline h-1 w-1 rounded-full bg-background/40"></span><span>Premium Amenities</span></div>
                <div class="mt-12 flex flex-col sm:flex-row gap-4" style="opacity: 1; transform: none;">
-                  <a href="#enquire" class="group inline-flex items-center justify-center gap-3 bg-background text-foreground px-9 py-4 text-[12px] tracking-[0.28em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors">
+                  <a href="#" onclick="openModal(); return false;" class="group inline-flex items-center justify-center gap-3 bg-background text-foreground px-9 py-4 text-[12px] tracking-[0.28em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors">
                      Download Brochure 
                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                      </svg>
                   </a>
-                  <a href="#enquire" class="inline-flex items-center justify-center gap-3 border border-background/60 text-background px-9 py-4 text-[12px] tracking-[0.28em] uppercase hover:bg-background hover:text-foreground transition-colors">Register Interest</a>
+                  <a href="#" onclick="openModal(); return false;" class="inline-flex items-center justify-center gap-3 border border-background/60 text-background px-9 py-4 text-[12px] tracking-[0.28em] uppercase hover:bg-background hover:text-foreground transition-colors">Register Interest</a>
                </div>
             </div>
             <div class="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 flex flex-col items-center gap-2 text-background/70" style="opacity: 1;">
@@ -349,7 +349,7 @@
                            <li class="flex items-center gap-3"><span class="h-px w-3 bg-accent"></span> 3.1m ceiling height</li>
                            <li class="flex items-center gap-3"><span class="h-px w-3 bg-accent"></span> Garden or valley views</li>
                         </ul>
-                        <a href="#enquire" class="mt-10 inline-flex items-center gap-2 text-[12px] tracking-[0.24em] uppercase text-foreground border-b border-foreground pb-1 self-start group-hover:text-accent group-hover:border-accent transition-colors">
+                        <a href="#" onclick="openModal(); return false;" class="mt-10 inline-flex items-center gap-2 text-[12px] tracking-[0.24em] uppercase text-foreground border-b border-foreground pb-1 self-start group-hover:text-accent group-hover:border-accent transition-colors">
                            Request Floorplan 
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3.5 w-3.5" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -382,7 +382,7 @@
                            <li class="flex items-center gap-3"><span class="h-px w-3 bg-accent"></span> Natural material palette</li>
                            <li class="flex items-center gap-3"><span class="h-px w-3 bg-accent"></span> European appliances</li>
                         </ul>
-                        <a href="#enquire" class="mt-10 inline-flex items-center gap-2 text-[11px] tracking-[0.24em] uppercase text-foreground border-b border-foreground pb-1 self-start group-hover:text-accent group-hover:border-accent transition-colors">
+                        <a href="#" onclick="openModal(); return false;" class="mt-10 inline-flex items-center gap-2 text-[11px] tracking-[0.24em] uppercase text-foreground border-b border-foreground pb-1 self-start group-hover:text-accent group-hover:border-accent transition-colors">
                            Request Floorplan 
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3.5 w-3.5" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -415,7 +415,7 @@
                            <li class="flex items-center gap-3"><span class="h-px w-3 bg-accent"></span> Premium stone finishes</li>
                            <li class="flex items-center gap-3"><span class="h-px w-3 bg-accent"></span> Private entrance option</li>
                         </ul>
-                        <a href="#enquire" class="mt-10 inline-flex items-center gap-2 text-[11px] tracking-[0.24em] uppercase text-foreground border-b border-foreground pb-1 self-start group-hover:text-accent group-hover:border-accent transition-colors">
+                        <a href="#" onclick="openModal(); return false;" class="mt-10 inline-flex items-center gap-2 text-[11px] tracking-[0.24em] uppercase text-foreground border-b border-foreground pb-1 self-start group-hover:text-accent group-hover:border-accent transition-colors">
                            Request Floorplan 
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right h-3.5 w-3.5" aria-hidden="true">
                               <path d="M7 7h10v10"></path>
@@ -928,6 +928,60 @@
             </a>
         </div>
       </main>
+      <dialog id="enquireModal" class="bg-secondary rounded-none shadow-2xl w-full max-w-[1000px] border-none p-0 backdrop:bg-black/50 backdrop:backdrop-blur-sm">
+         <button onclick="closeModal()" class="absolute top-0 right-0 z-10 hover:rotate-90 transition-transform duration-300">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M18 6 6 18M6 6l12 12"/></svg>
+         </button>
+         <section id="enquire" class="p-8 lg:p-16">
+            <div class="mx-auto max-w-[1100px] grid lg:grid-cols-12 gap-12 items-start">
+                  <div class="lg:col-span-5">
+                     <p class="eyebrow"><span class="hairline"></span>Enquire</p>
+                     <h2 class="mt-8 font-serif text-3xl lg:text-4xl leading-[1.05] font-light">Receive brochure, floor plans &amp; <span class="italic text-olive">availability</span>.</h2>
+                     <p class="mt-6 text-muted-foreground leading-relaxed">Our team will respond within one business day with full project information and a private consultation.</p>
+                  </div>
+                  <div class="lg:col-span-7">
+                     <form id="leadForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdxNfIpG-yXY3XwXq2v94Lv6ouKyDY1MdpH5j94Rzq9bI4p7A/formResponse" method="POST" class="space-y-6 bg-background border border-border p-8 lg:p-10">
+                     <div class="group">
+                        <label class="text-[10px] tracking-[0.28em] uppercase text-muted-foreground flex items-center gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user h-3 w-3" aria-hidden="true">
+                              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                              <circle cx="12" cy="7" r="4"></circle>
+                           </svg>
+                           *Full Name
+                        </label>
+                        <input id="fullName" required="" type="text" class="mt-2 w-full bg-transparent border-b border-border focus:border-olive outline-none py-3 font-serif text-lg transition-colors" name="entry.2005620554">
+                     </div>
+                     <div class="group">
+                        <label class="text-[10px] tracking-[0.28em] uppercase text-muted-foreground flex items-center gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-3 w-3" aria-hidden="true">
+                              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                           </svg>
+                           *Email
+                        </label>
+                        <input id="email" required="" type="email" class="mt-2 w-full bg-transparent border-b border-border focus:border-olive outline-none py-3 font-serif text-lg transition-colors" name="entry.1045781291">
+                     </div>
+                     <div class="group">
+                        <label class="text-[10px] tracking-[0.28em] uppercase text-muted-foreground flex items-center gap-2">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-3 w-3" aria-hidden="true">
+                              <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+                           </svg>
+                           *Phone
+                        </label>
+                        <input id="phone" required="" type="tel" pattern="[0-9]*" class="mt-2 w-full bg-transparent border-b border-border focus:border-olive outline-none py-3 font-serif text-lg transition-colors" name="entry.1166974658">
+                     </div>
+                     <button type="submit" class="group w-full inline-flex items-center justify-center gap-3 bg-foreground text-background px-9 py-5 text-[11px] tracking-[0.28em] uppercase hover:bg-accent transition-colors mt-4">
+                        Request Information 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true">
+                           <path d="M5 12h14"></path>
+                           <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                     </button>
+                  </form>
+                  </div>
+            </div>
+         </section>
+      </dialog>
       <!--/$-->
       <script src="./assets/carousel.js" defer></script>
    </body>
