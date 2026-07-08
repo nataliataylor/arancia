@@ -158,7 +158,13 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
     .then(() => {
         // Success state
         submitButton.innerHTML = 'Information Submitted Successfully';
-        form.reset(); // Clears the form inputs upon success
+        if (typeof gtag === 'function') {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18307966211/oluKCIqx-swcEIPK9ZlE'
+            });
+            console.log('Conversion sent to Google Ads');
+        }
+        form.reset();
     })
     .catch(error => {
         console.error('Error:', error);
@@ -174,3 +180,15 @@ const closeModal = () => modal.close();
 modal.addEventListener('click', (e) => {
   if (e.target === modal) closeModal();
 });
+
+function openPrivacyModal() {
+    const modal = document.getElementById('privacy-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+}
+
+function closePrivacyModal() {
+    const modal = document.getElementById('privacy-modal');
+    modal.classList.remove('flex');
+    modal.classList.add('hidden');
+}

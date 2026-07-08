@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18307966211"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'AW-18307966211');
+      </script>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="preload" as="image" href="../assets/hero.webp">
-      <link rel="stylesheet" href="../assets/styles-DSCFH82Z.css" data-precedence="default">
-      <link rel="stylesheet" href="../assets/css2" data-precedence="default">
+      <link rel="stylesheet" href="../assets/styles.css" data-precedence="default">
       <link rel="icon" type="image/png" href="../assets/favicon.png">
       <title>Arancia Yards | Покупка квартиры в Дубае | Инвестиции в недвижимость</title>
       <meta property="og:type" content="website">
@@ -18,7 +26,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
    </head>
    <body>
-      <h1 class="sr-only">Купить недвижимость в Дубае: квартиры в проекте Arancia Yards. Получить визу инвестора и вид на жительство в Дубае </h1>
+      <h1 class="sr-only">Купить недвижимость в Дубае: квартиры в проекте Arancia Yards. Возможности визы инвестора и вид на жительство в Дубае </h1>
       <!--$-->
       <main class="bg-background text-foreground overflow-x-hidden">
          <header id="header" class="header">
@@ -950,7 +958,7 @@
                               <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
                               <circle cx="12" cy="10" r="3"></circle>
                            </svg>
-                           The Yards, City of Arabia
+                           Al Attar Business Center - Office BC3-15 - Al Barsha - Dubai
                         </li>
                      </ul>
                   </div>
@@ -959,7 +967,11 @@
                   <p>
                      © <!-- -->2026<!-- --> Arancia Yards. All rights reserved.
                   </p>
-                  <div class="flex gap-8"><a href="#" class="hover:text-background">Privacy Policy</a><a href="#" class="hover:text-background">Terms</a></div>
+                  <div class="flex gap-8">
+                     <button onclick="openPrivacyModal()" class="hover:text-background transition-colors">
+                        Privacy Policy
+                     </button>
+                  </div>
                </div>
             </div>
          </footer>
@@ -1033,6 +1045,51 @@
             </div>
          </section>
       </dialog>
+      <div id="privacy-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+         <div class="bg-background border border-border w-full max-w-2xl max-h-[80vh] min-h-0 overflow-y-auto p-8 rounded-lg shadow-2xl relative">
+            <button onclick="closePrivacyModal()" class="absolute top-4 right-4 text-2xl hover:text-gray-600">×</button>
+            
+            <h2 class="space-after">Privacy Policy</h2>
+            <p class="space-after"><em>Last updated: July 8, 2026</em></p>
+            
+            <h3><b>1. Introduction </b></h3>
+            <p class="space-after">At <strong>Arancia Yards</strong>, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website.</p>
+
+            <h3><b>2. Information We Collect</b></h3>
+            <p>We collect information that you voluntarily provide to us, including:</p>
+            <ul class="space-after">
+                  <li><strong>Contact Information:</strong> Name, email address, and phone number.</li>
+                  <li><strong>Inquiry Details:</strong> Preferences and questions regarding real estate opportunities in Dubai.</li>
+                  <li><strong>Technical Data:</strong> Device info, IP address, and browsing activity (via cookies).</li>
+            </ul>
+
+            <h3><b>3. How We Use Your Information</b></h3>
+            <ul class="space-after">
+                  <li>To provide professional real estate consultations.</li>
+                  <li>To respond to your inquiries and support your property search.</li>
+                  <li>To analyze traffic and measure the effectiveness of our marketing campaigns (Google Ads).</li>
+            </ul>
+
+            <h3><b>4. Data Sharing and Disclosure</b></h3>
+            <p>We do not sell your personal data. We share it only for:</p>
+            <ul class="space-after">
+                  <li><strong>Professional Operations:</strong> With authorized real estate consultants or partners involved in the process.</li>
+                  <li><strong>Legal Requirements:</strong> To comply with laws in the United Arab Emirates.</li>
+            </ul>
+
+            <h3><b>5. Cookies and Advertising</b></h3>
+            <p class="space-after">We use cookies to enhance your experience. We utilize Google Ads to reach potential investors; these services may use cookies based on your previous visits. You can control these settings in your browser.</p>
+
+            <h3><b>6. Data Security</b></h3>
+            <p class="space-after">We implement industry-standard measures to protect your information from unauthorized access.</p>
+
+            <h3><b>7. Your Rights</b></h3>
+            <p class="space-after">You have the right to access, update, or request the deletion of your data by contacting us.</p>
+
+            <h3><b>8. Contact Us</b></h3>
+            <p class="space-after">If you have any questions, please contact us at: <strong>ini390537@gmail.com</strong></p>
+         </div>
+      </div>
       <!--/$-->
       <script src="../assets/carousel.js?v=1.1" defer></script>
    </body>

@@ -3650,3 +3650,40 @@ dialog::-webkit-scrollbar-thumb { background: #d1d5db; }
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; 
   overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;
 }
+
+#privacy-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+#privacy-modal.flex {
+    display: flex !important;;
+}
+
+#privacy-modal > div {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh !important;
+    min-height: 0 !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 640px) {
+    #privacy-modal > div {
+        max-width: 100% !important;
+        height: 100% !important;
+        border-radius: 0 !important;
+    }
+}
+
+.space-after {
+    margin-bottom: 30px;
+}
