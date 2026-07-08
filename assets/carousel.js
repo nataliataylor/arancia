@@ -133,44 +133,37 @@ window.addEventListener("scroll", () => {
   header.classList.toggle("scrolled", scrolled);
 });
 
+document.addEventListener('submit', function(e) {
+    if (e.target && e.target.id === 'leadForm') {
+        e.preventDefault();
+        
+        const form = e.target;
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        const formData = new FormData(form);
+        submitButton.innerHTML = 'Sending...';
+        submitButton.disabled = true;
 
-document.getElementById('leadForm').addEventListener('submit', function(e) {
-    const form = e.target;
-
-    if (!form.checkValidity()) {
-        return; 
+        fetch(form.action, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: formData
+        })
+        .then(() => {
+            submitButton.innerHTML = 'Information Submitted Successfully';
+            form.reset();
+            
+            if (typeof gtag === 'function') {
+                gtag('event', 'conversion', { 'send_to': 'AW-18307966211/oluKCIqx-swcEIPK9ZlE' });
+                console.log('campaign submitted');
+            }
+        })
+        .catch(err => {
+            console.error('Error:', err);
+            submitButton.innerHTML = 'Error, please try again';
+            submitButton.disabled = false;
+        });
     }
-
-    e.preventDefault(); 
-
-    const formData = new FormData(form);
-    const submitButton = form.querySelector('button[type="submit"]');
-    
-    submitButton.innerHTML = 'Sending...';
-    submitButton.disabled = true;
-
-    // Send data to Google Forms in the background
-    fetch(form.action, {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors'
-    })
-    .then(() => {
-        // Success state
-        submitButton.innerHTML = 'Information Submitted Successfully';
-        if (typeof gtag === 'function') {
-            gtag('event', 'conversion', {
-                'send_to': 'AW-18307966211/oluKCIqx-swcEIPK9ZlE'
-            });
-            console.log('Conversion sent to Google Ads');
-        }
-        form.reset();
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        submitButton.innerHTML = 'Error, please try again';
-        submitButton.disabled = false;
-    });
 });
 
 const modal = document.getElementById('enquireModal');
